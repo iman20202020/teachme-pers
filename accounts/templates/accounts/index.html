@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'accounts/_base.html' %}
+
+{% block title %}
+
+
+{% endblock %}
+
+{% block contents %}
+<div class="align-center container  ">
+        <div class="row justify-content-center">
+            <div class="col-12   " dir="rtl">
+
+                <h5 class=" display-4 text text-right "  ><strong>معلم یاب</strong></h5>
+                <p class=" text text-center" ><h4><strong>بهترین معلمو با چند کلیک  پیدا کن ‍</strong></h4></p>
+                <div class="mbr-section-btn mt-3  text text-center">
+                    <a class="btn btn-primary " href="{% url 'accounts:user_create' %}">کاربر جدیدم &nbsp;
+                    <i class="fas fa-user" ></i>
+                    </a>
+                    <a class="btn btn-primary " href="{% url 'accounts:login_view' %}">&nbsp; &nbsp;ورود&nbsp; &nbsp;<i class="fas fa-user-graduate" ></i>&nbsp;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
